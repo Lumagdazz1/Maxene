@@ -550,7 +550,7 @@ G = '\x1b[1;32m';W = '\x1b[1;97m';R = '\x1b[38;5;160m';B = '\x1b[1;94m';Y = '\x1
 def GabxTools():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "×".join(uuid)
-  server = requests.get(f'https://github.com/Lumagdazz1/Maxene/blob/main/Approval.txt').text
+  server = requests.get(f'https://github.com/Lumagdazz1/Approval/blob/main/All%20Approval.txt').text
 
   os.system(f"clear")
   print("==================================================")
@@ -560,7 +560,7 @@ def GabxTools():
   print("==================================================")
   print(f" [=] BOT CHECKING KEY ")
   try:
-    httpCaht = requests.get(f"https://github.com/Lumagdazz1/Maxene/blob/main/Approval.txt").text
+    httpCaht = requests.get(f"https://github.com/Lumagdazz1/Approval/blob/main/All%20Approval.txt").text
     if id in httpCaht:
       print("==================================================")
       print(f" ✔️ SUCCESSFUL KEY ADDED TO TXT FILE ");time.sleep(2)
